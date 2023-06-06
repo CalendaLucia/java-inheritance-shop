@@ -81,6 +81,7 @@ public class Carrello {
                     System.out.println("Numero di scelte: " + count);
                     break;
                 case "exit":
+                    System.out.println("Nel tuo carrello ci sono " + count + " prodotti");
                     break;
                 default:
                     System.out.println("Scelta non valida. Riprova.");

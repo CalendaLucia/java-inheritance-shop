@@ -11,4 +11,18 @@ public class Televisore extends Prodotto {
         this.pollici = pollici;
         this.smartTv = smartTv;
     }
+
+    public double getPollici() {
+        return pollici;
+    }
+
+    public boolean isSmartTv() {
+        return smartTv;
+    }
+
+    @Override
+    public String toString() {
+        String stringa = this.getNome() + " Descrzione:  " + this.getDescrizione() + " Prezzo comprensivo di iva " + this.finalPrice() + " Pollici: " + this.getPollici() + " Smart Tv: " + this.isSmartTv();
+        return stringa;
+    }
 }

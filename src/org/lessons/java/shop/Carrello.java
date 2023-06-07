@@ -47,24 +47,25 @@ public class Carrello {
                     input.nextLine();
 
                     Smartphone smartphone = new Smartphone(nome, descrizione, prezzo, iva, codeImei, memoria);
-                    System.out.println("Telefono " + smartphone.getNome() + " Descrizione: " + smartphone.getDescrizione() + " Prezzo incluso di iva " + smartphone.finalPrice());
-                    System.out.println("Codice IMEI: " + smartphone.getCodeImei() + " Memoria: " + smartphone.getMemoria() + "GB");
                     count++;
+
                     System.out.println("Numero prodotti: " + count);
 
-                    prodotto = smartphone;
+                    System.out.println(smartphone.toString());
                     break;
                 case "2":
                     System.out.print("Inserisci pollici: ");
                     double pollici = input.nextDouble();
                     input.nextLine();
-                    System.out.print("È una smart TV? : ");
+                    System.out.print("È una smart TV? true/false : ");
                     boolean smartTv = input.nextBoolean();
                     input.nextLine();
 
                     Televisore televisore = new Televisore(nome, descrizione, prezzo, iva, pollici, smartTv);
                     count++;
+                    System.out.println(televisore.toString());
                     System.out.println("Numero di scelte: " + count);
+
                     break;
                 case "3":
                     System.out.print("Inserisci colore: ");
@@ -78,6 +79,7 @@ public class Carrello {
 
                     Cuffie cuffie = new Cuffie(nome, descrizione, prezzo, iva, colore, wireless, cablate);
                     count++;
+                    System.out.println(cuffie.toString());
                     System.out.println("Numero di scelte: " + count);
                     break;
                 case "exit":

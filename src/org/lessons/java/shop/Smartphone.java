@@ -19,4 +19,11 @@ public class Smartphone extends Prodotto {
     public int getMemoria() {
         return memoria;
     }
+
+//    METODI
+@Override
+public String toString() {
+    String stringa = this.getNome() + "/n" + this.getDescrizione() + "/n" + this.finalPrice() + "/n" + this.getCodeImei() + this.getMemoria();
+    return stringa;
+}
 }

@@ -14,4 +14,22 @@ public class Cuffie extends Prodotto {
         this.wireless = wireless;
         this.cablate = cablate;
     }
+
+    public String getColore() {
+        return colore;
+    }
+
+    public boolean isWireless() {
+        return wireless;
+    }
+
+    public boolean isCablate() {
+        return cablate;
+    }
+
+    @Override
+    public String toString() {
+        String stringa = this.getNome() + "/n" + this.getDescrizione() + "/n" + this.finalPrice() + "/n" + this.getColore() + this.isWireless() + this.isCablate();
+        return stringa;
+    }
 }

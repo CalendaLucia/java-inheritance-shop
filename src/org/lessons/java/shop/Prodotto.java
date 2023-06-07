@@ -29,12 +29,10 @@ private static int generateRandomCode() {
     return rand.nextInt(1000);
 }
 
-    public BigDecimal finalPrice() {
-        BigDecimal importoIva = prezzo.multiply(iva.divide(BigDecimal.valueOf(100)));
-        return prezzo.add(importoIva);
-    }
-
-
+public BigDecimal finalPrice() {
+    BigDecimal importoIva = prezzo.multiply(iva.divide(BigDecimal.valueOf(100)));
+    return prezzo.add(importoIva);
+}
 
 
 

@@ -21,9 +21,11 @@ public class Smartphone extends Prodotto {
     }
 
 //    METODI
-@Override
-public String toString() {
-    String stringa = this.getNome() + "/n" + this.getDescrizione() + "/n" + this.finalPrice() + "/n" + this.getCodeImei() + this.getMemoria();
-    return stringa;
-}
+
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Codice IMEI: " + getCodeImei() + ", Memoria: " + getMemoria() + "GB" + "Prezzo finale " + finalPrice().ulp();
+    }
+
 }

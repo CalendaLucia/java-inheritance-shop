@@ -73,4 +73,12 @@ public BigDecimal finalPrice() {
     public void setIva(BigDecimal iva) {
         this.iva = iva;
     }
+
+    @Override
+    public String toString() {
+        return
+                "Codice prodotto: " + codice +
+                getNome() + getDescrizione() +
+                finalPrice();
+    }
 }

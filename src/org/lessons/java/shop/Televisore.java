@@ -22,7 +22,7 @@ public class Televisore extends Prodotto {
 
     @Override
     public String toString() {
-        String stringa = this.getNome() + " Descrzione:  " + this.getDescrizione() + " Prezzo comprensivo di iva " + this.finalPrice() + " Pollici: " + this.getPollici() + " Smart Tv: " + this.isSmartTv();
-        return stringa;
+        return super.toString() + ", Pollici: " + getPollici() + ", Smart TV: " + isSmartTv() + ", Prezzo finale: " + finalPrice();
     }
+
 }

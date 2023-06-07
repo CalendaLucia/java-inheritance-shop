@@ -29,7 +29,7 @@ public class Cuffie extends Prodotto {
 
     @Override
     public String toString() {
-        String stringa = this.getNome() + "/n" + this.getDescrizione() + "/n" + this.finalPrice() + "/n" + this.getColore() + this.isWireless() + this.isCablate();
-        return stringa;
+        return super.toString() + ", Colore: " + getColore() + ", Wireless: " + isWireless() + ", Cablate: " + isCablate();
     }
+
 }
